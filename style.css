@@ -20,8 +20,6 @@ background: linear-gradient(
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    padding: 24px;
 }
 
 .cabecalho-img{
@@ -33,11 +31,27 @@ background: linear-gradient(
     gap: 32px;
 }
 
+.cabecalho-menu-lista{
+    align-items: center;
+    display: flex;
+    gap: 15%;
+    list-style-type: none;
+}
+
 .cabecalho-menu-item{
     font-family: 'Sarala', sans-serif;
     color: #FFF2E7;
     font-weight: 400;
     font-size: 18px;
+    cursor: pointer;
+    display: flex;
+}
+
+.nav-link {
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    color: inherit;
 }
 
 .conteudo{
@@ -46,10 +60,11 @@ background: linear-gradient(
 }
 
 .conteudo-principal{
+    margin-top: 20px;
+    margin-inline: 40px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
 }
 
 .conteudo-principal-escrito{
@@ -62,7 +77,7 @@ background: linear-gradient(
     font-family: 'Righteous', cursive;
     color: #FFF2E7;
     font-weight: 400;
-    font-size: 104x;
+    font-size: 64px;
 }
 
 .conteudo-principal-escrito-subtitulo{
@@ -86,7 +101,15 @@ background: linear-gradient(
 }
 
 .conteudo-principal-imagem{
-    height: 430px;
+    height: 10%;
+    width: 90%;
+}
+
+.figure-conteudo-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .conteudo-secundario{
@@ -130,4 +153,18 @@ background: linear-gradient(
   object-fit: cover;      /* mantém a proporção e cobre todo o contêiner */
   object-position: center;/* centraliza o foco */
   border-radius: 50%;     /* deixa oval/circular */
+}
+
+.botao-nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ECD6C4;
+    padding: 12px 24px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    font-family: 'Righteous', cursive;
+    color: #2F2325;
+    font-weight: 400;
+    font-size: 18px;
 }
